@@ -19,18 +19,11 @@ Below is a detailed step by step of my process used to complete this analysis.
 
 ### 1. Gather Data
 
-In order to begin my project, I needed to find some datasets on Alternative Fuel Vehicles. I was able to find several easily downloadable datasets from the Alternative Fuels Data Center website: https://afdc.energy.gov/
+In order to begin my project, I needed to find some datasets on Alternative Fuel Vehicles. I was able to find several easily downloadable datasets from the Alternative Fuels Data Center website. (https://afdc.energy.gov/)
 
-I also found a great table containing AFV registration counts by state and fuel type [here](https://afdc.energy.gov/vehicle-registration). They have this table for the years 2016-2022.
+I used the Alternative Fuel Stations, Laws and Incentives, Light Duty Vehicles, and Medium and Heavy Duty Vehicles datasets for this project
 
-Unfortunately, there was not a downloadable version of these tables so I needed to scrape it using rSelenium.
+I also found a great table on the same website containing vehicle registration counts by state and fuel type [here](https://afdc.energy.gov/vehicle-registration). They have this table for the years 2016-2022.
 
-## Including Plots
+Unfortunately, there was not a downloadable version of these tables so I needed to scrape it using rSelenium and rvest. I detailed my web scraping process in the document [Data_Scraping_Process.R](https://github.com/kaylaashine/AFV_Capstone/blob/main/Data_Scraping_Process.R) because it is very lengthy, but at the end of my web scraping, I had seven tables for each year from 2016-2022 detailing vehicle registrations by fuel type and state.
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
